@@ -4,36 +4,39 @@
 		<link rel="stylesheet" href="./index.css"></link>
 	</head>
 	<body onload="loadInitialCalender()">
-		<div class="topContainer">
-			<div>
-			<label id="label"> Month : </label>
-			<select id="month" onchange="displaySelectedMonth()">
-				<option value=0>JAN</option>
-				<option value=1>FEB</option>
-				<option value=2>MAR</option>
-				<option value=3>APR</option>
-				<option value=4>MAY</option>
-				<option value=5>JUNE</option>
-				<option value=6>JULY</option>
-				<option value=7>AUG</option>
-				<option value=8>SEPT</option>
-				<option value=9>OCT</option>
-				<option value=10>NOV</option>
-				<option value=11>DEC</option>
-			</select>
-		</div>
-			<div class="arrows">
-				<div class="left" >
-					<img src="./public/left-arrow.png" onclick="handleArrowClick(1)" class="arrow"/>
-				</div>
-				<div class="right">
-					<img src="./public/right-arrow.png"  onclick="handleArrowClick(2)" class="arrow"//>
+		<div class="wrapper">
+			<div class="topContainer">
+				<div>
+				<label id="label"> Month : </label>
+				<select id="month" onchange="displaySelectedMonth()">
+					<option value=0>JAN</option>
+					<option value=1>FEB</option>
+					<option value=2>MAR</option>
+					<option value=3>APR</option>
+					<option value=4>MAY</option>
+					<option value=5>JUNE</option>
+					<option value=6>JULY</option>
+					<option value=7>AUG</option>
+					<option value=8>SEPT</option>
+					<option value=9>OCT</option>
+					<option value=10>NOV</option>
+					<option value=11>DEC</option>
+				</select>
+			</div>
+			<div class="monthHeading" id="monthHeading"></div>
+				<div class="arrows">
+					<div class="left" >
+						<img src="./public/left-arrow.png" onclick="handleArrowClick(1)" class="arrow"/>
+					</div>
+					<div class="right">
+						<img src="./public/right-arrow.png"  onclick="handleArrowClick(2)" class="arrow"//>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div id="container">
-			<div id="daysContainer"></div>
-			<div id="datesContainer"></div>
+			<div id="container">
+				<div id="daysContainer"></div>
+				<div id="datesContainer"></div>
+			</div>
 		</div>
 	</body>
 </html>

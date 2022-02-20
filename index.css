@@ -1,3 +1,6 @@
+.wrapper{
+    padding:0 10px ;
+}
 #daysContainer{
     display:grid;
     grid-template-columns: repeat(7,1fr);
@@ -14,6 +17,7 @@
 .topContainer{
     display:flex;
     justify-content: space-between;
+    margin-bottom:10px;
 }
 
 .dates {
@@ -42,9 +46,7 @@
 #label{
     font-family: sans-serif;
 }
-.topContainer{
-    margin-bottom:10px;
-}
+
 .arrows{
     display:flex;
     align-items: center;
@@ -53,4 +55,13 @@
 .arrow{
     padding:5px;
     height: 22px;;
+}
+
+.monthHeading{
+    font-size: x-large;
+    font-weight: 200;
+    color:lightslategrey ;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
 }

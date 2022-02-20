@@ -66,6 +66,7 @@ function displayMonth(selected_Month){
         classes[i].innerHTML = date;
         date++;
     }
+	document.getElementById("monthHeading").innerHTML =monthNames[selected_Month] + " 2022";
 }
 function clearAll(){
     let classes = document.getElementsByClassName("dates");
