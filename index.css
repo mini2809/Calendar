@@ -1,0 +1,43 @@
+#daysContainer{
+    display:grid;
+    grid-template-columns: repeat(7,1fr);
+    color:lightslategrey ;
+    font-family: sans-serif;
+}
+#datesContainer{
+    display:grid;
+    grid-template-columns: repeat(7,1fr);
+    color:lightslategrey ;
+    font-family: sans-serif;
+}
+
+.dates {
+    min-height: 100px;
+    border: 1px solid lightgrey;
+    display:flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+.dayLabel{
+    min-height: 40px;
+    border: 1px solid lightgrey;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+#month{
+    width:130px;
+    height:35px;
+    font-family: sans-serif;
+    border:1px solid lightgray;
+    border-radius: 5px;
+
+}
+#label{
+    font-family: sans-serif;
+}
+.topContainer{
+    margin-bottom:10px;
+}
+
