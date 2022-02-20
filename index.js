@@ -20,6 +20,21 @@ function displayDefaultMonth(){
     document.getElementById("month").selectedIndex=month;
 	displayMonth(month);
 }
+function handleArrowClick(type){
+	let current = document.getElementById("month").value;
+	current= Number(current);
+	if(type == 1){
+		if(current != 0){
+			current = current - 1;
+		}
+	}
+	else{
+		if(current < 11)
+		current = current + 1;
+	}
+	document.getElementById("month").selectedIndex=current;
+	displaySelectedMonth();
+}
 
 function displaySelectedMonth(){
     clearAll();

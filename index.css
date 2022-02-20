@@ -11,6 +11,11 @@
     font-family: sans-serif;
 }
 
+.topContainer{
+    display:flex;
+    justify-content: space-between;
+}
+
 .dates {
     min-height: 100px;
     border: 1px solid lightgrey;
@@ -40,4 +45,12 @@
 .topContainer{
     margin-bottom:10px;
 }
+.arrows{
+    display:flex;
+    align-items: center;
 
+}
+.arrow{
+    padding:5px;
+    height: 22px;;
+}
