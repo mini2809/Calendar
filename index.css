@@ -4,13 +4,11 @@
 #daysContainer{
     display:grid;
     grid-template-columns: repeat(7,1fr);
-    color:lightslategrey ;
     font-family: sans-serif;
 }
 #datesContainer{
     display:grid;
     grid-template-columns: repeat(7,1fr);
-    color:lightslategrey ;
     font-family: sans-serif;
 }
 
@@ -20,19 +18,37 @@
     margin-bottom:10px;
 }
 
-.dates {
+.dateBlock {
     min-height: 100px;
     border: 1px solid lightgrey;
-    display:flex;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
     padding-top: 10px;
+    font-size: 12px;
 }
+.date{
+    display: flex;
+    justify-content: center;
+}
+.dateValue{
+    padding:4px;
+}
+.currentdate{
+    background-color: blue;
+    border-radius: 50%;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .dayLabel{
     min-height: 40px;
     border: 1px solid lightgrey;
     display:flex;
     justify-content: center;
     align-items: center; 
+    font-size:12px;
 }
 
 #month{
@@ -41,7 +57,7 @@
     font-family: sans-serif;
     border:1px solid lightgray;
     border-radius: 5px;
-
+    padding: 8px;
 }
 #label{
     font-family: sans-serif;
@@ -50,8 +66,8 @@
 .arrows{
     display:flex;
     align-items: center;
-
 }
+
 .arrow{
     padding:5px;
     height: 22px;;
@@ -60,8 +76,35 @@
 .monthHeading{
     font-size: x-large;
     font-weight: 200;
-    color:lightslategrey ;
     font-family: sans-serif;
     display: flex;
     align-items: center;
+}
+.dot{
+    border-radius: 50%;
+    background-color: red;
+    height: 8px;
+    width: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.title{
+    font-family: sans-serif;
+    border-radius: 16px;
+    padding:5px;
+    font-size: 11px;
+}
+
+.eventWrapper{
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+}
+
+.eventWrapper:hover{
+    display: flex;
+    align-items: center;
+    background-color: rgb(241,243,244);
+    border-radius: 3px;
 }
